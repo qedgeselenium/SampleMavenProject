@@ -1,5 +1,6 @@
 package sample;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
@@ -11,6 +12,7 @@ public class Maven_Program {
   @Test
   public void f() {
 	  driver.get("http://www.rightstart.com");
+	  driver.findElement(By.id("123")).sendKeys("test");
   }
   @BeforeClass
   public void beforeClass() {
